@@ -5,17 +5,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>알라딘</title>
-        
         <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800|Noto+Sans+KR:400,500,700,900&display=swap&subset=korean" rel="stylesheet">
         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
         <script type="text/javascript" src="js/prefixfree.min.js"></script>
-        
     </head>
     <body>
         <div class="wrap">
-            <header id="gnb_contain">
+            <header id="gnb_container">
                 <div class="gnb_content">
                     <div class="menu">
                         <div class="menu_icon">
@@ -51,53 +49,364 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="search_area">
-                    <div class="inner_area">
-                        <div class="left_contain">
-                            <a href="#">
-                                <img src="img/aladinlogo.png" alt="홈페이지로이동"/>
-                            </a>
-                        </div>
-                        <div class="center_contain">
-                            <div class="search_box">
-                                <select>
-                                    <option>통합검색</option>
-                                    <option>국내도서</option>
-                                    <option>외국도서</option>
-                                    <option>e-Book</option>
-                                    <option>온라인중고</option>
-                                    <option>중고매장</option>
-                                    <option>커피</option>
-                                    <option>음반</option>
-                                    <option>DVD</option>
-                                    <option>굿즈</option>
-                                    <option>서재검색</option>
-                                    <option>서재태그</option>
-                                    <option>마이리뷰</option>
-                                    <option>마이리스트</option>
-                                    <option>마이페이지</option>
-                                    <option>서재</option>
-                                </select>
-                                <input id="srch" type="text" name="검색" placeholder="검색어를 입력하세요"> 
-                                <input id="enter" type="button" value="검색" onclick="searchBook()">
-                            </div>
-                            <nav>
-                                <ul>
-                                    <li><a href="#">베스트셀러</a></li>
-                                    <li><a href="#">새로나온책</a></li>
-                                    <li><a href="#">새로나올책</a></li>
-                                    <li><a href="#">출판사랭킹</a></li>
-                                    <li><a href="#">이벤트</a></li>
-                                    <li><a href="#">추천도서</a></li>
-                                    <li><a href="#">싱글즈</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="right_contain">
-                        </div>
+                <div class="drop_navi">
+                    <div class="inner_contain">
+                        <ul class="navi_content">
+                            <li class="korea_book drop_menu"><a href="#">국내도서</a>
+                                <div class="drop_sub">
+                                    <ul>
+                                        <li><a href="#">유아</a></li>
+                                        <li><a href="#">어린이</a></li>
+                                        <li><a href="#">전집/중고전집</a></li>
+                                        <li><a href="#">청소년</a></li>
+                                        <li><a href="#">좋은부모</a></li>
+                                        <li><a href="#">초등학교참고서</a></li>
+                                        <li><a href="#">중학교참고서</a></li>
+                                        <li><a href="#">고등학교참고서</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">가정/요리/뷰티</a></li>
+                                        <li><a href="#">건강/취미/레져</a></li>
+                                        <li><a href="#">소설/시/희곡</a></li>
+                                        <li><a href="#">장르소설</a></li>
+                                        <li><a href="#">에세이</a></li>
+                                        <li><a href="#">여행</a></li>
+                                        <li><a href="#">만화</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">인문학</a></li>
+                                        <li><a href="#">사회과학</a></li>
+                                        <li><a href="#">역사</a></li>
+                                        <li><a href="#">예술/대중문화</a></li>
+                                        <li><a href="#">과학</a></li>
+                                        <li><a href="#">경제경영</a></li>
+                                        <li><a href="#">자기계발</a></li>
+                                        <li><a href="#">외국어</a></li>
+                                        <li><a href="#">컴퓨터/모바일</a></li>
+                                        <li><a href="#">대학교제</a></li>
+                                        <li><a href="#">수험서/자격증</a></li>
+                                        <li><a href="#">공무원 수험서</a></li>
+                                        <li><a href="#">사전/기타</a></li>
+                                        <li><a href="#">종교/역학</a></li>
+                                        <li><a href="#">잡지</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="oversea_book drop_menu"><a href="#">해외도서</a>
+                                <div class="drop_sub on">
+                                    <ul>
+                                        <li><a href="#">영미도서1</a></li>
+                                        <li><a href="#">소설/시/희곡</a></li>
+                                        <li><a href="#">ELT/어학/사전</a></li>
+                                        <li><a href="#">인문/사회</a></li>
+                                        <li><a href="#">경제경영</a></li>
+                                        <li><a href="#">종교/명상/점술</a></li>
+                                        <li><a href="#">요리</a></li>
+                                        <li><a href="#">해외잡지</a></li>
+                                        <li><a href="#">역사</a></li>
+                                        <li><a href="#">공예/취미/수집</a></li>
+                                        <li><a href="#">가정/인테리어</a></li>
+                                        <li><a href="#">건강/스포츠</a></li>
+                                        <li><a href="#">만화</a></li>
+                                        <li><a href="#">청소년</a></li>
+                                        <li><a href="#">여행</a></li>
+                                        <li><a href="#">대학교재/전문서1</a></li>
+                                        <li><a href="#">예술/대중문화</a></li>
+                                        <li><a href="#">자연과학</a></li>
+                                        <li><a href="#">기술공학</a></li>
+                                        <li><a href="#">의학</a></li>
+                                        <li><a href="#">컴퓨터</a></li>
+                                        <li><a href="#">교육/자료</a></li>
+                                        <li><a href="#">건축/디자인</a></li>
+                                        <li><a href="#">언어학</a></li>
+                                        <li><a href="#">법률</a></li>
+                                        <li><a href="#">수험서</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">기타언어권1</a></li>
+                                        <li><a href="#">중국도서</a></li>
+                                        <li><a href="#">독일도서</a></li>
+                                        <li><a href="#">스페인도서</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">어린이1</a></li>
+                                        <li><a href="#">캐릭터</a></li>
+                                        <li><a href="#">그림책</a></li>
+                                        <li><a href="#">리더스</a></li>
+                                        <li><a href="#">챕터북</a></li>
+                                        <li><a href="#">동화책</a></li>
+                                        <li><a href="#">오디오북</a></li>
+                                        <li><a href="#">어린이사전</a></li>
+                                        <li><a href="#">개념학습</a></li>
+                                        <li><a href="#">영어학습</a></li>
+                                        <li><a href="#">교과학습</a></li>
+                                        <li><a href="#">미국교과서</a></li>
+                                        <li><a href="#">수상작</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">제2외국어</a></li>
+                                        <li><a href="#">잡지</a></li>
+                                        <li><a href="#">코믹</a></li>
+                                        <li><a href="#">문학</a></li>
+                                        <li><a href="#">실용/취미</a></li>
+                                        <li><a href="#">라이트노벨</a></li>
+                                        <li><a href="#">어린이</a></li>
+                                        <li><a href="#">경제경영</a></li>
+                                        <li><a href="#">에니메이션 굿즈</a></li>
+                                    </ul>       
+                                </div>
+                            </li>
+                            <li class="enternet_book drop_menu"><a href="#">e-Book</a>
+                                <div class="drop_sub">
+                                    <ul>
+                                        <li><a href="#">유아</a></li>
+                                        <li><a href="#">어린이</a></li>
+                                        <li><a href="#">청소년</a></li>
+                                        <li><a href="#">좋은부모</a></li>
+                                        <li><a href="#">가정/요리/뷰티</a></li>
+                                        <li><a href="#">건강/취미/레져</a></li>
+                                        <li><a href="#">여행</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">경제경영</a></li>
+                                        <li><a href="#">자기계발</a></li>
+                                        <li><a href="#">소설/시/희곡</a></li>
+                                        <li><a href="#">에세이</a></li>
+                                        <li><a href="#">인문학</a></li>
+                                        <li><a href="#">사회과학</a></li>
+                                        <li><a href="#">역사</a></li>
+                                        <li><a href="#">예술/대중문화</a></li>
+                                        <li><a href="#">과학</a></li>
+                                        <li><a href="#">고전</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">외국어</a></li>
+                                        <li><a href="#">로맨스</a></li>
+                                        <li><a href="#">BL</a></li>
+                                        <li><a href="#">라이트노벨</a></li>
+                                        <li><a href="#">판타지/무협</a></li>
+                                        <li><a href="#">만화</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="uesed_book drop_menu"><a href="#">온라인중고샵</a>
+                                <div class="drop_sub">
+                                    <ul>
+                                        <li><a href="#">유아</a></li>
+                                        <li><a href="#">어린이</a></li>
+                                        <li><a href="#">청소년</a></li>
+                                        <li><a href="#">좋은부모</a></li>
+                                        <li><a href="#">에세이</a></li>
+                                        <li><a href="#">가정/요리/뷰티</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">인문학</a></li>
+                                        <li><a href="#">사회과학</a></li>
+                                        <li><a href="#">역사</a></li>
+                                        <li><a href="#">예술/대중문화</a></li>
+                                        <li><a href="#">대학교재</a></li>
+                                        <li><a href="#">소설/시/희곡</a></li>
+                                        <li><a href="#">경제경영</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">자기계발</a></li>
+                                        <li><a href="#">수험서/자격증</a></li>
+                                        <li><a href="#">외국어</a></li>
+                                        <li><a href="#">컴퓨터/모바일</a></li>
+                                        <li><a href="#">잡지</a></li>
+                                        <li><a href="#"><small>중고 국내도서</small></a></li>
+                                        <li><a href="#"><small>중고 음반</small></a></li>
+                                        <li><a href="#"><small>중고DVD블루레이</small></a></li>
+                                        <li><a href="#"><small>중고 외국도서</small></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="used_store drop_menu"><a href="#">중고매장</a>
+                                <div class="drop_sub">
+                                    <ul>
+                                        <li><a href="#">서울1</a></li>
+                                        <li><a href="#">가로수길점</a></li>
+                                        <li><a href="#">강남점</a></li>
+                                        <li><a href="#">강서홈플러스점</a></li>
+                                        <li><a href="#">건대점</a></li>
+                                        <li><a href="#">노원역점</a></li>
+                                        <li><a href="#">대학로점</a></li>
+                                        <li><a href="#">서울대입구역점</a></li>
+                                        <li><a href="#">수유점</a></li>
+                                        <li><a href="#">신림점</a></li>
+                                        <li><a href="#">신촌점</a></li>
+                                        <li><a href="#">연신내점</a></li>
+                                        <li><a href="#">영등포점</a></li>
+                                        <li><a href="#">타임스퀘어점</a></li>
+                                        <li><a href="#">이수역점</a></li>
+                                        <li><a href="#">잠실신천점</a></li>
+                                        <li><a href="#">잠실롯데점</a></li>
+                                        <li><a href="#">월드타워점</a></li>
+                                        <li><a href="#">종로점</a></li>
+                                        <li><a href="#">합정점</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">경기1</a></li>
+                                        <li><a href="#">동탄점</a></li>
+                                        <li><a href="#">부천점</a></li>
+                                        <li><a href="#">분당서현점</a></li>
+                                        <li><a href="#">분당야탑점</a></li>
+                                        <li><a href="#">산본점</a></li>
+                                        <li><a href="#">수원점</a></li>
+                                        <li><a href="#">안산홈플러스점</a></li>
+                                        <li><a href="#">일산점</a></li>
+                                        <li><a href="#">화정점</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">광역시 등1</a></li>
+                                        <li><a href="#">광주상무점</a></li>
+                                        <li><a href="#">광주충장로점</a></li>
+                                        <li><a href="#">김해점</a></li>
+                                        <li><a href="#">대구충장로점</a></li>
+                                        <li><a href="#">대구상인점</a></li>
+                                        <li><a href="#">대전시청역점</a></li>
+                                        <li><a href="#">대전은행점</a></li>
+                                        <li><a href="#">동대구역점</a></li>
+                                        <li><a href="#">부산경성대</a></li>
+                                        <li><a href="#">부경대역점</a></li>
+                                        <li><a href="#">부산덕천점</a></li>
+                                        <li><a href="#">부산서면점</a></li>
+                                        <li><a href="#">부산센텀점</a></li>
+                                        <li><a href="#">울산점</a></li>
+                                        <li><a href="#">인천계산점</a></li>
+                                        <li><a href="#">인천구월점</a></li>
+                                        <li><a href="#">인춘송도점</a></li>
+                                        <li><a href="#">전주점</a></li>
+                                        <li><a href="#">천안점</a></li>
+                                        <li><a href="#">천주점</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="coffee drop_menu"><a href="#">커피</a>
+                            </li>
+                            <li class="musice drop_menu"><a href="#">음반</a>
+                                <div class="drop_sub">
+                                    <ul>
+                                    <li><a href="#">가요</a></li>
+                                    <li><a href="#">클래식</a></li>
+                                    <li><a href="#">팝</a></li>
+                                    <li><a href="#">재즈</a></li>
+                                    <li><a href="#">국악</a></li>
+                                    <li><a href="#">월드뮤직</a></li>
+                                    <li><a href="#">종교/명상/기타</a></li>
+                                    <li><a href="#">OST</a></li>
+                                    <li><a href="#">LP</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="dvd drop_menu"><a href="#">DVD</a>
+                                <div class="drop_sub">
+                                    <ul>
+                                        <li><a href="#">드라마/코미디</a></li>
+                                        <li><a href="#">TV시리즈</a></li>
+                                        <li><a href="#">액션/어드밴처</a></li>
+                                        <li><a href="#">S.F/판타지</a></li>
+                                        <li><a href="#">공포/스릴러</a></li>
+                                        <li><a href="#">음악DVD</a></li>
+                                        <li><a href="#">취미/스포츠</a></li>
+                                        <li><a href="#">교양/다큐멘터리</a></li>
+                                        <li><a href="#">유아/아동</a></li>
+                                        <li><a href="#">애니메이션</a></li>
+                                        <li><a href="#">박스세트</a></li>
+                                        <li><a href="#">제작국가별</a></li>
+                                        <li><a href="#">성인</a></li>
+                                        <li><a href="#">VHS</a></li>
+                                        <li><a href="#">VCD</a></li>
+                                        <li><a href="#">블루레이1</a></li>
+                                        <li><a href="#">3D 블루레이</a></li>
+                                        <li><a href="#">공포/스릴러</a></li>
+                                        <li><a href="#">다큐멘터리</a></li>
+                                        <li><a href="#">드라마/코미디</a></li>
+                                        <li><a href="#">애니메이션</a></li>
+                                        <li><a href="#">액션/SF</a></li>
+                                        <li><a href="#">음악</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="goods drop_menu"><a href="#">알라딘굿즈</a>
+                                <div class="drop_sub">
+                                    <ul>
+                                        <li><a href="#">노트</a></li>
+                                        <li><a href="#">다이어리 캘린더</a></li>
+                                        <li><a href="#">담요 방석 책베게</a></li>
+                                        <li><a href="#">독서대</a></li>
+                                        <li><a href="#">머그컵 텀블러</a></li>
+                                        <li><a href="#">배지 와펜 키홀더</a></li>
+                                        <li><a href="#">북라이프 램프</a></li>
+                                        <li><a href="#">북마크</a></li>
+                                        <li><a href="#">북엔드</a></li>
+                                        <li><a href="#">북커버</a></li>
+                                        <li><a href="#">수저 포크 와이너</a></li>
+                                        <li><a href="#">스티키 마스킹테이프</a></li>
+                                        <li><a href="#">양말 마스크 타월</a></li>
+                                        <li><a href="#">에코백 가방</a></li>
+                                        <li><a href="#">연필</a></li>
+                                        <li><a href="#">엽서 우표</a></li>
+                                        <li><a href="#">우산</a></li>
+                                        <li><a href="#">티셔츠</a></li>
+                                        <li><a href="#">파우치 케이스</a></li>
+                                        <li><a href="#">펜</a></li>
+                                        <li><a href="#">홀더 보드</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="bookple drop_menu"><a href="#">북플 | 서재</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </header>
+            <div class="search_area">
+                <div class="inner_area">
+                    <div class="left_contain">
+                        <a href="#">
+                            <img src="img/aladinlogo.png" alt="홈페이지로이동"/>
+                        </a>
+                    </div>
+                    <div class="center_contain">
+                        <div class="search_box">
+                            <select>
+                                <option>통합검색</option>
+                                <option>국내도서</option>
+                                <option>외국도서</option>
+                                <option>e-Book</option>
+                                <option>온라인중고</option>
+                                <option>중고매장</option>
+                                <option>커피</option>
+                                <option>음반</option>
+                                <option>DVD</option>
+                                <option>굿즈</option>
+                                <option>서재검색</option>
+                                <option>서재태그</option>
+                                <option>마이리뷰</option>
+                                <option>마이리스트</option>
+                                <option>마이페이지</option>
+                                <option>서재</option>
+                            </select>
+                            <input id="srch" type="text" name="검색" placeholder="검색어를 입력하세요"> 
+                            <input id="enter" type="button" value="검색" onclick="searchBook()">
+                        </div>
+                        <nav>
+                            <ul>
+                                <li><a href="#">베스트셀러</a></li>
+                                <li><a href="#">새로나온책</a></li>
+                                <li><a href="#">새로나올책</a></li>
+                                <li><a href="#">출판사랭킹</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">추천도서</a></li>
+                                <li><a href="#">싱글즈</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="right_contain">
+                    </div>
+                </div>
+            </div>
             <div id="content_container">
                 <!--main swiper slider--> 
                 <section class="main_slider_contain">
@@ -645,7 +954,7 @@
                         <div class="container">
                             <h2>e-Book</h2>
                             <div class="menu_content">
-                                <a href="#">로맨스</a><a href="#">판타지/무협</a><a href="#">만화</a><a href="#">BL</a><a href="#">경제경영</a><a href="#">자기계발</a><a href="#">소설/시/희곡</a><a href="#">라이트노벨</a><a href="#">에세이</a><a href="#">인문학</a><a href="#">역사</a><a href="#">사회과학</a><a href="#">청소년</a><a href="#">에술/대중문화</a><a href="#">외국어</a><a href="#">종교/역학</a><a href="#">컴퓨터/모바일</a><a href="#">어린이</a><a href="#">유아</a><a href="#">여행</a><a href="#">고전</a><a href="#">과학</a><a href="#">건강</a><a href="#">취미</a><a href="#">레저</a><a href="#">가정</a><a href="#">요리</a><a href="#">뷰티</a>
+                                <a href="#">로맨스</a><a href="#">판타지/무협</a><a href="#">만화</a><a href="#">BL</a><a href="#">경제경영</a><a href="#">자기계발</a><a href="#">소설/시/희곡</a><a href="#">라이트노벨</a><a href="#">에세이</a><a href="#">인문학</a><a href="#">역사</a><a href="#">사회과학</a><a href="#">청소년</a><a href="#">에술</a><a href="#">대중문화</a><a href="#">외국어</a><a href="#">종교</a><a href="#">역학</a><a href="#">컴퓨터</a><a href="#">모바일</a><a href="#">어린이</a><a href="#">유아</a><a href="#">여행</a><a href="#">고전</a><a href="#">과학</a><a href="#">건강</a><a href="#">취미</a><a href="#">레저</a><a href="#">가정</a><a href="#">요리</a><a href="#">뷰티</a><a href="#">기타</a>
                             </div>
                             <div class="swiper-container">
                                 <div class="swiper-wrapper">

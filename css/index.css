@@ -6,7 +6,7 @@ a{text-decoration:none; color:#666;}
 img{vertical-align:bottom;}
 h1,h2,h3,h4,h5{font-size:1em;}
 .wrap{width:100%;}
-header#gnb_contain{width:100%; background:#33afe9;}
+header#gnb_container{width:100%; background:#33afe9; position:relative; left:0; top:0;}
 div.gnb_content{width:65%; margin:0 auto; overflow:hidden; color:#fff;}
 div.gnb_content a{color:#fff;}
 
@@ -31,6 +31,15 @@ nav.sub_nav ul{width:100%;}
 nav.sub_nav ul li{display:inline-block; margin-right:20px;}
 nav.sub_nav ul li:last-child{margin-right:0;}
 nav.sub_nav ul li a{display:block; padding:15px 0;}
+
+div.drop_navi{width:100%; position:absolute; left:0%; top:100%; background:#fff; z-index:999;}
+div.drop_navi .inner_contain{width:65%;  margin:0 auto; border:1px solid #ddd;}
+div.drop_navi .navi_content{width:100%;  position:relative; }
+div.drop_navi .drop_menu{width:15%; height:40px; line-height:40px;}
+div.drop_navi .drop_menu .drop_sub{display:none; position:absolute; left:15%; top:0; width:85%; line-height:22px;}
+div.drop_navi .drop_menu .drop_sub.on{display:block;}
+div.drop_navi .drop_menu .drop_sub ul{width:20%; float:left;}
+div.drop_navi .drop_menu .drop_sub li a{display:block;}
 
 div.search_area{width:100%; height:140px; background-color:#fff; border-bottom:1px solid #33afe9; overflow:hidden;}
 div.search_area .inner_area{width:65%; margin:0 auto;}
