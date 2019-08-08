@@ -1,0 +1,970 @@
+<!doctype html>
+
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>알라딘</title>
+        
+        <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800|Noto+Sans+KR:400,500,700,900&display=swap&subset=korean" rel="stylesheet">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+        <script type="text/javascript" src="js/prefixfree.min.js"></script>
+        
+    </head>
+    <body>
+        <div class="wrap">
+            <header id="gnb_contain">
+                <div class="gnb_content">
+                    <div class="menu">
+                        <div class="menu_icon">
+                            <p class="btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </p>
+                            <p>MENU</p>
+                        </div>
+                    </div>
+                    <nav class="main_nav">
+                        <ul>
+                            <li><a href="#">국내도서</a></li>
+                            <li><a href="#">해외도서</a></li>
+                            <li><a href="#">e-Book</a></li>
+                            <li><a href="#">온라인중고샵</a></li>
+                            <li><a href="#">중고매장</a></li>
+                            <li><a href="#">커피</a></li>
+                            <li><a href="#">음반</a></li>
+                            <li><a href="#">DVD</a></li>
+                            <li><a href="#">알라딘굿즈</a></li>
+                            <li><a href="#">복풀 | 서재</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="sub_nav">
+                        <ul>
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                            <li><a href="#">마이페이지</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">장바구니</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="search_area">
+                    <div class="inner_area">
+                        <div class="left_contain">
+                            <a href="#">
+                                <img src="img/aladinlogo.png" alt="홈페이지로이동"/>
+                            </a>
+                        </div>
+                        <div class="center_contain">
+                            <div class="search_box">
+                                <select>
+                                    <option>통합검색</option>
+                                    <option>국내도서</option>
+                                    <option>외국도서</option>
+                                    <option>e-Book</option>
+                                    <option>온라인중고</option>
+                                    <option>중고매장</option>
+                                    <option>커피</option>
+                                    <option>음반</option>
+                                    <option>DVD</option>
+                                    <option>굿즈</option>
+                                    <option>서재검색</option>
+                                    <option>서재태그</option>
+                                    <option>마이리뷰</option>
+                                    <option>마이리스트</option>
+                                    <option>마이페이지</option>
+                                    <option>서재</option>
+                                </select>
+                                <input id="srch" type="text" name="검색" placeholder="검색어를 입력하세요"> 
+                                <input id="enter" type="button" value="검색" onclick="searchBook()">
+                            </div>
+                            <nav>
+                                <ul>
+                                    <li><a href="#">베스트셀러</a></li>
+                                    <li><a href="#">새로나온책</a></li>
+                                    <li><a href="#">새로나올책</a></li>
+                                    <li><a href="#">출판사랭킹</a></li>
+                                    <li><a href="#">이벤트</a></li>
+                                    <li><a href="#">추천도서</a></li>
+                                    <li><a href="#">싱글즈</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="right_contain">
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div id="content_container">
+                <!--main swiper slider--> 
+                <section class="main_slider_contain">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/korea1_1.jpg" alt="도서 표지">
+                                            <h3>경계의 음악</h3>
+                                            <p>에드워드 사이드 음악비평집</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/korea1_2.jpg" alt="도서 표지">
+                                            <h3>어피치,마음에도 엉덩이가 필요해</h3>
+                                            <p>마음이 꽈당, 넘어져도 괜찮아. 마음에도 엉덩이가 있으니까!</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/korea1_3.jpg" alt="도서 표지">
+                                            <h3>오늘은 홈술</h3>
+                                            <p>술이 더 맛있어지는 황금비율 홈술 1분 레시피</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/korea1_4.jpg" alt="도서 표지">
+                                            <h3>Nobdy else but me,A portrait of stan Getz</h3>
+                                            <p>스탄 게츠의 아름다운 음악과 비극적 일생을 그린 국내 최초의 평전</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/oversea2_1.jpg" alt="도서 표지">
+                                            <h3>버락 오바마 &amp; 빌게이츠 추천도서</h3>
+                                            <p>Educated: A Memoir (Paperback)</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/oversea2_2.jpg" alt="도서 표지">
+                                            <h3>디즈니 '알라딘' 공식 컨셉 아트북</h3>
+                                            <p>The Art and Making of Aladdin (Hardcover)</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/oversea2_3.jpg" alt="도서 표지">
+                                            <h3>스파이더맨: 뉴 유니버스 아트북</h3>
+                                            <p>Spider-Man: Into the Spider-Verse : The Art of the Movie (Hardcover)</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/oversea2_4.jpg" alt="도서 표지">
+                                            <h3>왕좌의 게임 5권 세트도서</h3>
+                                            <p>Game of Thrones: A Song of Ice and Fire 1-5 Boxed Set (5 Mass Market Paperbacks)</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/ebook3_1.jpg" alt="도서 표지">
+                                            <h3>그쪽의 풍경은 환한가</h3>
+                                            <p>그날 그 자리에 있을 사람에게</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/ebook3_2.jpg" alt="도서 표지">
+                                            <h3>어른이 되면 괜찮을줄 알았다</h3>
+                                            <p>심리학, 어른의 안부를 묻다</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/ebook3_3.jpg" alt="도서 표지">
+                                            <h3>나의 미친 페미니스트 여자친구</h3>
+                                            <p>2-30대 남녀간의 연애와 성 이야기를 본격적으로 다룬 소설</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/ebook3_4.jpg" alt="도서 표지">
+                                            <h3>더 라스트 걸</h3>
+                                            <p>노벨 평화상 수상자 나디아 무라드의 전쟁, 폭력 그리고 여성 이야기</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/online4_1.jpg" alt="도서 표지">
+                                            <h3>내 치즈는 어디에서 왔을까? </h3>
+                                            <p>아직도 망설이는 당신에게 스펜서 존슨이 보내는 마지막 조언</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/online4_2.jpg" alt="도서 표지">
+                                            <h3>Becoming 비커밍</h3>
+                                            <p>미셸 오바마 자서전</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/online4_3.jpg" alt="도서 표지">
+                                            <h3>쾌락독서</h3>
+                                            <p>개인주의자 문유석의 유쾌한 책 읽기</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/online4_4.jpg" alt="도서 표지">
+                                            <h3>다산의 마지막 공부</h3>
+                                            <p>마음을 지켜낸다는 것</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/music5_1.jpg" alt="앨범이미지">
+                                            <h3>방탄소년단 - BTS WORLD OST</h3>
+                                            <p>포토북(88p)+양면포토카드(1종)+게임쿠폰(1종)+렌티큘러(1종)</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/music5_3.jpg" alt="레앨범이미지">
+                                            <h3>레드벨벳 - 미니앨범 The ReVe Festival Day 1 [Guide Book Ver.]</h3>
+                                            <p>부클릿(48p)+포토스탠드(1종)+포토카드(1종)</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/music5_4.jpg" alt="앨범이미지">
+                                            <h3>트와이스 -  'TWICELAND ZONE 2：Fantasy Park' </h3>
+                                            <p>포토북(28p)+포토프레임&amp;엽서(1종)+접지포스터(1종)</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/music5_2.jpg" alt="앨범이미지">
+                                            <h3>청하 - 미니 4집 Flourishing</h3>
+                                            <p>부클릿(76p)+엽서(1종)+포토카드(1종)</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/coffe9_1.jpg" alt="커피원두이미지">
+                                            <h3>브라질 산타 리타</h3>
+                                            <p>Brazil Santa Rita Red Bourbon</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/coffe9_2.jpg" alt="커피원두이미지">
+                                            <h3>엘살바도르 산 파블로</h3>
+                                            <p>El Salvador San Pablo</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/coffe9_3.jpg" alt="커피원두이미지">
+                                            <h3>에티오피아 첼바 </h3>
+                                            <p>Ethiopia Chelba</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/coffe9_4.jpg" alt="커피원두이미지">
+                                            <h3>알라딘 블렌드 어톤먼트</h3>
+                                            <p>Aladin Blend Atonement</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/dvd6_1.jpg" alt="DVD이미지">
+                                            <h3>캡틴 마블 : 풀슬립 스틸북 한정판(2disc: 4K UHD + 2D)</h3>
+                                            <p>초도증정 캡틴 마블 자수패치</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/dvd6_2.jpg" alt="DVD이미지">
+                                            <h3>이스케이프 룸 : 슬립케이스 초회 한정판 </h3>
+                                            <p>살인 트랩을 숨긴 탈출방들을 거치면서 평범한 게임이 아니라는 사실을 깨닫는데…</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/dvd6_3.jpg" alt="DVD이미지">
+                                            <h3>위너브라더스 인기 BD</h3>
+                                            <p>한정기간 단독 행사</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/dvd6_4.jpg" alt="DVD이미지">
+                                            <h3>샤잠! : 스틸북 한정판 (2disc: 4K UHD + 2D)</h3>
+                                            <p>모든 히어로의 능력이 하나로 모였다!</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/goods8_1.jpg" alt="책베개 이미지">
+                                            <h3>메모리폼 커버형 책베개</h3>
+                                            <p>메모리폼으로 제작되어 편하게 사용할 수 있는 알라딘 책베개</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/goods8_2.jpg" alt="엘폴더 이미지">
+                                            <h3>본투리드 엘홀더</h3>
+                                            <p>각종 문서, 서류를 간편하게 보관할 수 있는 L홀더 파일</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/goods8_3.jpg" alt="우산 2개 이미지">
+                                            <h3>알라딘 2겹 장우산</h3>
+                                            <p>다양한 디자인의 알라딘 2겹 장우산</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/goods8_4.jpg" alt="유리보틀 이미지">
+                                            <h3>N스트랩 유리 보틀 (투명)</h3>
+                                            <p>그라데이션이 돋보이는 알라딘 스트랩 유리 보틀</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/book7_4.jpg" alt="도서 표지">
+                                            <h3>백 살까지 살 각오는 하셨습니까? </h3>
+                                            <p>아프지 않고, 외롭지 않은 노년을 위한 100세 인생 지침서 </p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/book7_1.jpg" alt="도서 표지">
+                                            <h3>사소하지만 쓸모 있는 건강법</h3>
+                                            <p>프랑스 국민 의사 미셸 시메스의 건강 매뉴얼 119가지</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/book7_2.jpg" alt="도서 표지">
+                                            <h3>노력이라 쓰고 버티기라 읽는다</h3>
+                                            <p>해야 하는 일과 하고 싶은 일 사이에서다</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main_book">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/book7_3.jpg" alt="도서 표지">
+                                            <h3>환장할 우리 가족</h3>
+                                            <p>정상 가족 판타지를 벗어나 '나'와 '너'의 가족을 위하여</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Navigation -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </section>
+                <section class="book_cate_container">
+                    <article class="new_book">
+                        <h2>신작</h2>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/new1.jpg" alt="도서 표지">
+                                            <h3>박막례,이대로 죽을 수 없다</h3>
+                                            <p>독보적 유튜버 박막례와 천재 PD 손녀 김유라의 말도 안 되게 뒤집힌 신나는 인생!</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/new2.jpg" alt="도서 표지">
+                                            <h3>천년의 질문</h3>
+                                            <p>"조정래가 묻는다, 국가란 무엇인가"</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/new3.jpg" alt="도서 표지">
+                                            <h3>흔한남매</h3>
+                                            <p>웃음을 유발하는 에이미와 으뜸이의 티격태격한 이야기는 물론, 너무 공감돼서 무서운 이야기</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/new4.jpg" alt="도서 표지">
+                                            <h3>잊기 좋은 이름</h3>
+                                            <p>'1부 나를 부른 이름'은 작가의 성장과 가족에 관한 이야기이다.</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/new5.jpg" alt="도서 표지">
+                                            <h3>여행의이유</h3>
+                                            <p>김영하 신작, 여행에 관한 아홉 가지 이야기</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/new6.jpg" alt="도서 표지">
+                                            <h3>Exhalation</h3>
+                                            <p>테드 창 '숨' 원서</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </article>
+                    <article class="writer_pick">
+                        <h2>편집장 PICK</h2>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/writerpick1.jpg" alt="도서 표지">
+                                            <h3>연의 편지</h3>
+                                            <p>세상에 지친 당신에게 선물하고 싶은 이야기</p>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/writerpick2.jpg" alt="도서 표지">
+                                            <h3>디지털 미니멀리즘</h3>
+                                            <p>딥 워크를 뛰어넘는 삶의 원칙</p>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/writerpick3.jpg" alt="도서 표지">
+                                            <h3>시간 여행 Time Travel</h3>
+                                            <p>외국어 번역시</p>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/writerpick4.jpg" alt="도서 표지">
+                                            <h3>아이엠 이국종 </h3>
+                                            <p>미래를 향한 첫걸음 '아이엠' 시리즈</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/writerpick5.jpg" alt="도서 표지">
+                                            <h3>천년의 질문</h3>
+                                            <p>조정래가 묻는다, 국가란 무엇인가</p>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/writerpick6.jpg" alt="도서 표지">
+                                            <h3>눈과 사람과 눈사람</h3>
+                                            <p>이곳에 녹아들지 않아도 돼</p>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/writerpick7.jpg" alt="도서 표지">
+                                            <h3>엘리트 독식 사회</h3>
+                                            <p>세상을 바꾸겠다는 그들의 열망과 위선</p>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/writerpick8.jpg" alt="도서 표지">
+                                            <h3>요괴를 빌려드립니다 </h3>
+                                            <p>요괴 대여점 시리즈 1</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/writerpick9.jpg" alt="도서 표지">
+                                            <h3>시그널</h3>
+                                            <p>일상의 신호가 알려주는 격변의 세계 경제 항해법</p>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/writerpick10.jpg" alt="도서 표지">
+                                            <h3>귀족의 시대 탐미의 발견</h3>
+                                            <p> 이지은의 오브제 문화사 1 </p>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/writerpick11.jpg" alt="도서 표지">
+                                            <h3>바람이 불면 바람이 부는 나무가 되지요</h3>
+                                            <p>문태준 시인의 받아들여서 새로워지는 것들</p>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" onclick = "return false;">
+                                            <img src="img/writerpick12.jpg" alt="도서 표지">
+                                            <h3>한자와 나오키 1</h3>
+                                            <p>당한 만큼 갚아준다</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </article>
+                    <article class="best_book">
+                        <h2>베스트 셀러</h2>
+                        <div class="tap_list">
+                            <a href="#" class="tapbtn tapbtn1 on" onclick="topfive(); return false;">1위~5위</a>
+                            <a href="#" class="tapbtn tapbtn2" onclick="topten();  return false;">6위~10위</a>
+                        </div>
+                        <div class="best_number on" id="top5">
+                            <ol>
+                                <li><a href="#"><b>1.</b><img src="img/best1.jpg" alt="책표지"></a></li>
+                                <li><a href="#"><b>2.</b><img src="img/best2.jpg" alt="책표지"></a></li>
+                                <li><a href="#"><b>3.</b><img src="img/best3.jpg" alt="책표지"></a></li>
+                                <li><a href="#"><b>4.</b><img src="img/best4.jpg" alt="책표지"></a></li>
+                                <li><a href="#"><b>5.</b><img src="img/best5.jpg" alt="책표지"></a></li>
+                            </ol>
+                        </div>
+                        <div class="best_number" id="top10">
+                            <ol>
+                                <li><a href="#"><b>6.</b><img src="img/best1.jpg" alt="책표지"></a></li>
+                                <li><a href="#"><b>7.</b><img src="img/best2.jpg" alt="책표지"></a></li>
+                                <li><a href="#"><b>8.</b><img src="img/best3.jpg" alt="책표지"></a></li>
+                                <li><a href="#"><b>9.</b><img src="img/best4.jpg" alt="책표지"></a></li>
+                                <li><a href="#"><b>10.</b><img src="img/best5.jpg" alt="책표지"></a></li>
+                            </ol>
+                        </div>
+                    </article>
+                    <article class="e_book">
+                        <div class="container">
+                            <h2>e-Book</h2>
+                            <div class="menu_content">
+                                <a href="#">로맨스</a><a href="#">판타지/무협</a><a href="#">만화</a><a href="#">BL</a><a href="#">경제경영</a><a href="#">자기계발</a><a href="#">소설/시/희곡</a><a href="#">라이트노벨</a><a href="#">에세이</a><a href="#">인문학</a><a href="#">역사</a><a href="#">사회과학</a><a href="#">청소년</a><a href="#">에술/대중문화</a><a href="#">외국어</a><a href="#">종교/역학</a><a href="#">컴퓨터/모바일</a><a href="#">어린이</a><a href="#">유아</a><a href="#">여행</a><a href="#">고전</a><a href="#">과학</a><a href="#">건강</a><a href="#">취미</a><a href="#">레저</a><a href="#">가정</a><a href="#">요리</a><a href="#">뷰티</a>
+                            </div>
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <a href="#" onclick = "return false;">
+                                                <img src="img/ebook1.jpg" alt="도서 표지">
+                                                <h3>연의 편지</h3>
+                                                <p>세상에 지친 당신에게 선물하고 싶은 이야기</p>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#" onclick = "return false;">
+                                                <img src="img/ebook2.jpg" alt="도서 표지">
+                                                <h3>디지털 미니멀리즘</h3>
+                                                <p>딥 워크를 뛰어넘는 삶의 원칙</p>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#" onclick = "return false;">
+                                                <img src="img/ebook3.jpg" alt="도서 표지">
+                                                <h3>시간 여행 Time Travel</h3>
+                                                <p>외국어 번역시</p>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#" onclick = "return false;">
+                                                <img src="img/ebook4.jpg" alt="도서 표지">
+                                                <h3>아이엠 이국종 </h3>
+                                                <p>미래를 향한 첫걸음 '아이엠' 시리즈</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <a href="#" onclick = "return false;">
+                                                <img src="img/ebook5.jpg" alt="도서 표지">
+                                                <h3>연의 편지</h3>
+                                                <p>세상에 지친 당신에게 선물하고 싶은 이야기</p>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#" onclick = "return false;">
+                                                <img src="img/ebook6.jpg" alt="도서 표지">
+                                                <h3>디지털 미니멀리즘</h3>
+                                                <p>딥 워크를 뛰어넘는 삶의 원칙</p>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#" onclick = "return false;">
+                                                <img src="img/ebook7.jpg" alt="도서 표지">
+                                                <h3>시간 여행 Time Travel</h3>
+                                                <p>외국어 번역시</p>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#" onclick = "return false;">
+                                                <img src="img/ebook8.jpg" alt="도서 표지">
+                                                <h3>아이엠 이국종 </h3>
+                                                <p>미래를 향한 첫걸음 '아이엠' 시리즈</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <a href="#" onclick = "return false;">
+                                                <img src="img/ebook9.jpg" alt="도서 표지">
+                                                <h3>연의 편지</h3>
+                                                <p>세상에 지친 당신에게 선물하고 싶은 이야기</p>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#" onclick = "return false;">
+                                                <img src="img/ebook10.jpg" alt="도서 표지">
+                                                <h3>디지털 미니멀리즘</h3>
+                                                <p>딥 워크를 뛰어넘는 삶의 원칙</p>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#" onclick = "return false;">
+                                                <img src="img/ebook11.jpg" alt="도서 표지">
+                                                <h3>시간 여행 Time Travel</h3>
+                                                <p>외국어 번역시</p>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#" onclick = "return false;">
+                                                <img src="img/ebook12.jpg" alt="도서 표지">
+                                                <h3>아이엠 이국종 </h3>
+                                                <p>미래를 향한 첫걸음 '아이엠' 시리즈</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <a href="#" onclick = "return false;">
+                                                <img src="img/ebook13.jpg" alt="도서 표지">
+                                                <h3>연의 편지</h3>
+                                                <p>세상에 지친 당신에게 선물하고 싶은 이야기</p>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#" onclick = "return false;">
+                                                <img src="img/ebook14.jpg" alt="도서 표지">
+                                                <h3>디지털 미니멀리즘</h3>
+                                                <p>딥 워크를 뛰어넘는 삶의 원칙</p>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#" onclick = "return false;">
+                                                <img src="img/ebook15.jpg" alt="도서 표지">
+                                                <h3>시간 여행 Time Travel</h3>
+                                                <p>외국어 번역시</p>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#" onclick = "return false;">
+                                                <img src="img/ebook16.jpg" alt="도서 표지">
+                                                <h3>아이엠 이국종 </h3>
+                                                <p>미래를 향한 첫걸음 '아이엠' 시리즈</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="aladin_special">
+                        <div class="container">
+                            <h2>알라딘 스페셜</h2>
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <a href="#" onclick = "return false;">
+                                                <img src="img/ebook13.jpg" alt="도서 표지">
+                                                <h3>연의 편지</h3>
+                                                <p>세상에 지친 당신에게 선물하고 싶은 이야기</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <a href="#" onclick = "return false;">
+                                                <img src="img/ebook14.jpg" alt="도서 표지">
+                                                <h3>디지털 미니멀리즘</h3>
+                                                <p>딥 워크를 뛰어넘는 삶의 원칙</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <a href="#" onclick = "return false;">
+                                                <img src="img/ebook15.jpg" alt="도서 표지">
+                                                <h3>시간 여행 Time Travel</h3>
+                                                <p>외국어 번역시</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <a href="#" onclick = "return false;">
+                                                <img src="img/ebook16.jpg" alt="도서 표지">
+                                                <h3>아이엠 이국종 </h3>
+                                                <p>미래를 향한 첫걸음 '아이엠' 시리즈</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </div>
+		<article class="saleif">
+		    <div class="container">
+			<h2>할인정보</h2>
+			 <div class="saleif_box1 saleifbox">
+			  <a href="#"><img src="img/circle1.png" alt="할인정보"></a>
+			  <h1>책 제목</h1>
+			  <h1>할인가격 ￦4,000</h1>
+			 </div>
+			 <div class="saleif_box2 saleifbox">
+			  <a href="#"><img src="img/circle2.png" alt="할인정보"></a>
+			  <h1>책 제목</h1>
+			  <h1>할인가격 ￦4,000</h1>
+			 </div>
+			 <div class="saleif_box3 saleifbox">
+			  <a href="#"><img src="img/circle3.png" alt="할인정보"></a>
+			  <h1>책 제목</h1>
+			  <h1>할인가격 ￦4,000</h1>
+			 </div>
+			 <div class="saleif_box4 saleifbox">
+			  <a href="#"><img src="img/circle4.png" alt="할인정보"></a>
+			  <h1>책 제목</h1>
+			  <h1>할인가격 ￦4,000</h1>
+			 </div>
+			 <div class="saleif_box5 saleifbox">
+			  <a href="#"><img src="img/circle5.png" alt="할인정보"></a>
+			  <h1>책 제목</h1>
+			  <h1>할인가격 ￦4,000</h1>
+			 </div>
+			 <div class="saleif_box6 saleifbox">
+			  <a href="#"><img src="img/circle6.png" alt="할인정보"></a>
+			  <h1>책 제목</h1>
+			  <h1>할인가격 ￦4,000</h1>
+			 </div>
+			</div>
+		</article>
+            <footer id="footer_container">
+            </footer>
+        </div>
+        
+        <!--swiper js-->
+        <script type="text/javascript" src="js/swiper.min.js"></script>
+        <!--커스텀 js-->
+        <script type="text/javascript" src="js/custom.js"></script>
+        <script>
+            var myPlugin = {
+              name: 'debugger',
+              params: {
+                debugger: false,
+              },
+              on: {
+                init: function () {
+                  if (!this.params.debugger) return;
+                  console.log('init');
+                },
+                click: function (e) {
+                  if (!this.params.debugger) return;
+                  console.log('click');
+                },
+                tap: function (e) {
+                  if (!this.params.debugger) return;
+                  console.log('tap');
+                },
+                doubleTap: function (e) {
+                  if (!this.params.debugger) return;
+                  console.log('doubleTap');
+                },
+                sliderMove: function (e) {
+                  if (!this.params.debugger) return;
+                  console.log('sliderMove');
+                },
+                slideChange: function () {
+                  if (!this.params.debugger) return;
+                  console.log('slideChange', this.previousIndex, '->', this.activeIndex);
+                },
+                slideChangeTransitionStart: function () {
+                  if (!this.params.debugger) return;
+                  console.log('slideChangeTransitionStart');
+                },
+                slideChangeTransitionEnd: function () {
+                  if (!this.params.debugger) return;
+                  console.log('slideChangeTransitionEnd');
+                },
+                transitionStart: function () {
+                  if (!this.params.debugger) return;
+                  console.log('transitionStart');
+                },
+                transitionEnd: function () {
+                  if (!this.params.debugger) return;
+                  console.log('transitionEnd');
+                },
+                fromEdge: function () {
+                  if (!this.params.debugger) return;
+                  console.log('fromEdge');
+                },
+                reachBeginning: function () {
+                  if (!this.params.debugger) return;
+                  console.log('reachBeginning');
+                },
+                reachEnd: function () {
+                  if (!this.params.debugger) return;
+                  console.log('reachEnd');
+                },
+              },
+            };
+            
+            
+        </script>
+        <script>
+        Swiper.use(myPlugin);
+        
+        var swiper = new Swiper('.main_slider_contain .swiper-container', {
+          pagination: {
+            el: '.main_slider_contain .swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.main_slider_contain .swiper-button-next',
+            prevEl: '.main_slider_contain .swiper-button-prev',
+          },
+          autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+          },
+          // Enable debugger
+          debugger: true,
+        });
+        var swiper = new Swiper('.book_cate_container .swiper-container', {
+          pagination: {
+            el: '.book_cate_container .swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.book_cate_container .swiper-button-next',
+            prevEl: '.book_cate_container .swiper-button-prev',
+          },
+          debugger: true,
+        });
+        var swiper = new Swiper('.new_book .swiper-container', {
+          autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+          }
+        });
+        </script>
+    </body>
+</html>

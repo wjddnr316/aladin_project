@@ -1,0 +1,180 @@
+@meta charset="utf-8";
+*{margin:0; padding:0; box-sizing:border-box;}
+body{font:0.8em/1.4 'Nanum Gothic',sans-serif;}
+ul{list-style:none;}
+a{text-decoration:none; color:#666;}
+img{vertical-align:bottom;}
+h1,h2,h3,h4,h5{font-size:1em;}
+.wrap{width:100%;}
+header#gnb_contain{width:100%; background:#33afe9;}
+div.gnb_content{width:65%; margin:0 auto; overflow:hidden; color:#fff;}
+div.gnb_content a{color:#fff;}
+
+div.menu{width:10%; float:left;}
+div.menu_icon{width:60%; height:50px; margin-right:40%; padding:15px 0; cursor:pointer;}
+div.menu_icon p{width:50%; float:left;}
+div.menu_icon p.btn{width:23px; height:12px; position:relative; left:0; top:2px;}
+div.menu_icon p:nth-child(2){padding-left:5px;}
+div.menu_icon p.btn span{width:100%; height:2px; position:absolute; background:#fff;}
+div.menu_icon p.btn span:nth-child(1){left:0; top:0;}
+div.menu_icon p.btn span:nth-child(2){left:0; top:50%; transform:translateY(-50%); -webkit-transform:translateY(-50%);}
+div.menu_icon p.btn span:nth-child(3){left:0; bottom:0;}
+
+nav.main_nav{width:60%; float:left;}
+nav.main_nav ul{width:100%; text-align:center;}
+nav.main_nav ul li{display:inline-block; margin-right:20px;}
+nav.main_nav ul li:last-child{margin-right:0;}
+nav.main_nav ul li a{display:block; padding:15px 0; }
+
+nav.sub_nav{width:30%; float:right; text-align:right;}
+nav.sub_nav ul{width:100%;}
+nav.sub_nav ul li{display:inline-block; margin-right:20px;}
+nav.sub_nav ul li:last-child{margin-right:0;}
+nav.sub_nav ul li a{display:block; padding:15px 0;}
+
+div.search_area{width:100%; height:140px; background-color:#fff; border-bottom:1px solid #33afe9; overflow:hidden;}
+div.search_area .inner_area{width:65%; margin:0 auto;}
+
+div.search_area .left_contain{display:flex; align-items:center; width:15%; height:140px; float:left; }
+div.search_area .left_contain a{display:block; width:70%;}
+div.search_area .left_contain a img{width:100%;}
+
+div.center_contain{width:70%; float:left;}
+div.center_contain .search_box{width:85%; margin:40px auto 0; overflow:hidden; border:1px solid #33afe9; border-radius:10px;}
+div.center_contain .search_box select,.search_box input{display:block; float:left; height:40px; border:none; color:#ef3b96; outline:none;}
+div.center_contain .search_box select{ width:15%; cursor:pointer; padding-left:20px;}
+div.center_contain .search_box input#srch{width:70%; text-indent:30px;}
+div.center_contain .search_box input#srch::placeholder{color:#ef3b96;}
+div.center_contain .search_box input#enter{width:15%; background:none; cursor:pointer;}
+
+div.center_contain nav{width:100%; margin-top:15px; font-size:.825em;}
+div.center_contain ul{width:85%; margin:0 auto; overflow:hidden;}
+div.center_contain ul li{display:block; width:14.285%; float:left; text-align:center;}
+div.center_contain ul li a{display:inline-block; color:#ef3b96;}
+
+div.search_area .right_contain{width:15%;float:left;}
+
+div.content_container {width:100%;}
+
+/*******            content > main slider               ******/
+.main_slider_contain .swiper-container {
+    width: 65%;
+    height: 600px;
+    border:1px solid #33afe9;
+    border-top:0;}
+.main_slider_contain .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;}
+.main_slider_contain .swiper-slide .main_book{
+    width:25%; float:left; height:100%; 
+    padding-top:50px; 
+    border-right:1px solid #ddd; 
+    font-size:.8em; }
+.main_book img{width:65%;}
+.main_book h3{
+    width:65%; height:85px; 
+    margin:0 auto; padding-top:25px; 
+    text-align:left;}
+.main_book p{
+    width:65%;
+    margin:0 auto; 
+    text-align:left;}
+.main_slider_contain .swiper-pagination-bullet{
+    width:115px;
+    height:4px;
+    position:relative;
+    border-radius:10px;
+    background-color:#ef3b96;}
+.main_slider_contain .swiper-pagination-bullet:before{
+    content:"국내도서";
+    position:absolute;
+    bottom:200%; left:50%;
+    width:100%;
+    transform:translateX(-50%);
+    color:#ef3b96;}
+.main_slider_contain .swiper-pagination-bullet:nth-child(2):before{content:"해외도서";}
+.main_slider_contain .swiper-pagination-bullet:nth-child(3):before{content:"e-Book";}
+.main_slider_contain .swiper-pagination-bullet:nth-child(4):before{content:"온라인중고샵";}
+.main_slider_contain .swiper-pagination-bullet:nth-child(5):before{content:"음반";}
+.main_slider_contain .swiper-pagination-bullet:nth-child(6):before{content:"커피";}
+.main_slider_contain .swiper-pagination-bullet:nth-child(7):before{content:"DVD";}
+.main_slider_contain .swiper-pagination-bullet:nth-child(8):before{content:"알라딘굿즈";}
+.main_slider_contain .swiper-pagination-bullet:nth-child(9):before{content:"복풀 | 서재";}
+
+/*****          북카테고리       *********/
+section.book_cate_container{width:65%; margin:25px auto; overflow:hidden; text-align:center; color:#1875a0;}
+section.book_cate_container h2{margin:10px 0;}
+section.book_cate_container a{display:block; margin-top:5px; color:#1875a0;}
+section.book_cate_container a p{width:80%; font-size:.9em; margin:5px auto 0; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+section.book_cate_container img{margin-bottom:5px;}
+section.book_cate_container .swiper-slide{padding:5px;}
+section.book_cate_container .swiper-container{
+    width: 100%;
+    height: 290px;
+    border-top:0;}
+/*신작*/
+section.book_cate_container .new_book{width:15%; float:left; border:1px solid #33afe9; color:#1875a0;}
+
+/*편집장추천*/
+section.book_cate_container .writer_pick{width:66%; float:left; margin:0 2%; border:1px solid #33afe9;}
+.writer_pick .swiper-slide>div{width:25%; float:left}
+
+/*best book*/
+.best_book{width:15%; float:left; height:329px; border:1px solid #33afe9;}
+.best_book h2{text-transform:uppercase;}
+.best_book .tap_list{width:100%;  overflow:hidden; padding:0 10px; }
+.best_book .tap_list a{width:50%; border:1px solid #33afe9; float:left; font-size:0.85em;}
+.best_book .tap_list a.on{background-color:#33afe9; color:#fff;}
+.best_book .tap_list a:nth-child(1){border-right:0;}
+.best_book .best_number{display:none; text-align:left; padding:0px 10px;}
+.best_book .best_number.on{display:block;}
+.best_book .best_number ol{list-style:none; width:100%; margin-top:10px; }
+.best_book .best_number ol li{}
+.best_book .best_number a{display:block; margin-top:5px; position:relative; left:0; top:0; line-height:45px; }
+.best_book .best_number a b{display:inline-block; width:30px;}
+.best_book .best_number a img{}
+.best_book .best_number a span{display:inline-block; margin-left:10px; }
+
+section.book_cate_container .swiper-pagination-bullet{background-color:#ef3b96;}
+
+/*E-book*/
+article.e_book{width:100%;}
+article.e_book .container{width:83%; height:300px; float:left; border:1px solid #33afe9; margin-top:25px; position:relative;}
+article.e_book .container h2{margin:15px; text-align:left; font-weight:bold;}
+
+article.e_book .container .menu_content{width:18%; height:300px; float:left; text-align:justify; padding:30px 0 0 10px;}
+article.e_book .container .menu_content a{font-size:0.825em; display:inline-block; margin:5px 5.2px;}
+article.e_book .container .menu_content a:hover{color:#ef3b96;}
+
+article.e_book .swiper-container{margin-left:2%; width:80%; height:300px; float:left;  margin-top:-40px;}
+article.e_book .swiper-container .swiper-slide>div{width:25%; float:left;}
+/*알라딘스페셜*/
+article.aladin_special{width:100%;}
+article.aladin_special .container{width:15%; float:left; height:300px; border:1px solid #33afe9; margin:25px 0 0 2%;}
+/*할인정보*/
+article.saleif{width:100%;}
+article.saleif .container{width:100%; height:343px; background-color:#33afe9;}
+article.saleif h2{border:px solid #33afe9; text-align:center; padding:20px;}
+article.saleif .saleifbox{width:16.666%; border:1px solid #33afe9; float:left; text-align:center;}
+article.saleif .saleifbox h1{margin-top:10px;}
+
+
+
+
+
+
+
