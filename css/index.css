@@ -131,39 +131,53 @@ div.content_container {width:100%;}
 .main_slider_contain .swiper-pagination-bullet:nth-child(9):before{content:"복풀 | 서재";}
 
 /*****          북카테고리       *********/
-section.book_cate_container{width:65%; margin:25px auto; overflow:hidden; text-align:center; color:#1875a0;}
-section.book_cate_container h2{margin:10px 0;}
-section.book_cate_container a{display:block; margin-top:5px; color:#1875a0;}
-section.book_cate_container a p{width:80%; font-size:.9em; margin:5px auto 0; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
-section.book_cate_container img{margin-bottom:5px;}
-section.book_cate_container .swiper-slide{padding:5px;}
+section.book_cate_container{
+    width:65%; margin:25px auto; overflow:hidden; text-align:center; color:#1875a0;}
+section.book_cate_container h2{
+    margin:10px 0;}
+section.book_cate_container a{
+    display:block; margin-top:5px; color:#1875a0;}
+section.book_cate_container a p{
+    width:80%; font-size:.9em; margin:5px auto 0; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+section.book_cate_container img{
+    margin-bottom:5px;}
 section.book_cate_container .swiper-container{
-    width: 100%;
-    height: 290px;
-    border-top:0;}
+    width: 100%; height: 290px; border-top: 0;}
 /*신작*/
-section.book_cate_container .new_book{width:15%; float:left; border:1px solid #33afe9; color:#1875a0;}
+section.book_cate_container .new_book{width: 15%; float:left; border: 1px solid #33afe9; color:#1875a0;}
 
 /*편집장추천*/
-section.book_cate_container .writer_pick{width:66%; float:left; margin:0 2%; border:1px solid #33afe9;}
+section.book_cate_container .writer_pick{width: 66%; float:left; margin: 0 2%; border:1px solid #33afe9;}
 .writer_pick .swiper-slide>div{width:25%; float:left}
 
 /*best book*/
-.best_book{width:15%; float:left; height:329px; border:1px solid #33afe9;}
-.best_book h2{text-transform:uppercase;}
-.best_book .tap_list{width:100%;  overflow:hidden; padding:0 10px; }
-.best_book .tap_list a{width:50%; border:1px solid #33afe9; float:left; font-size:0.85em;}
-.best_book .tap_list a.on{background-color:#33afe9; color:#fff;}
+.best_book{
+    width:15%; float:left; height:329px; border:1px solid #33afe9;}
+.best_book h2{
+    text-transform:uppercase;}
+.best_book .tap_list{
+    width:100%;  overflow:hidden; padding:0 10px;}
+.best_book .tap_list a{
+    width:50%; border:1px solid #33afe9; float:left; font-size:0.85em;}
+.best_book .tap_list a.on{
+    background-color:#33afe9; color:#fff;}
 .best_book .tap_list a:nth-child(1){border-right:0;}
-.best_book .best_number{display:none; text-align:left; padding:0px 10px;}
-.best_book .best_number.on{display:block;}
-.best_book .best_number ol{list-style:none; width:100%; margin-top:10px; }
+.best_book .best_number{
+    display:none; text-align:left; padding:0px 10px;}
+.best_book .best_number.on{
+    display:block;}
+.best_book .best_number ol{
+    list-style:none; width:100%; margin-top:10px;}
 .best_book .best_number ol li{}
-.best_book .best_number a{display:block; margin-top:5px; position:relative; left:0; top:0; line-height:45px; }
-.best_book .best_number a b{display:inline-block; width:30px;}
-.best_book .best_number a img{}
-.best_book .best_number a span{display:inline-block; margin-left:10px; }
-
+.best_book .best_number a{
+    display:block; width:100%; height:44px; margin-top:5px; overflow:hidden; position:relative; left:0; top:0;}
+.best_book .best_number .rank_number{
+    width:30px; float:left; text-align:center;}
+.best_book .best_number .rank_number span{
+    display:block; width:100%; height:22px;}
+.best_book .best_number .rank_number .half_top{
+    width: 15px; margin:0 auto; border-bottom:1px dashed #ddd;}
+.half_bot.up{color:red;}
 section.book_cate_container .swiper-pagination-bullet{background-color:#ef3b96;}
 
 /*E-book*/
