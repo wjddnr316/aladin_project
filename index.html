@@ -185,6 +185,16 @@
                                 </div>
                             </li>
                             <li class="coffee drop_menu"><a href="#">커피</a>
+                                <div class="drop_sub on">
+                                    <ul>
+                                    <li><a href="#">DRIP COFFEE</a></li>
+                                    <li><a href="#">COLD BREW</a></li>
+                                    <li><a href="#">COFFEE &amp; LATTE</a></li>
+                                    <li><a href="#">BEVERAGE</a></li>
+                                    <li><a href="#">TEA</a></li>
+                                    <li><a href="#">OTHERS</a></li>
+                                    </ul>
+                                </div>
                             </li>
                             <li class="musice drop_menu"><a href="#">음반</a>
                                 <div class="drop_sub on">
@@ -258,6 +268,13 @@
                                 </div>
                             </li>
                             <li class="bookple drop_menu"><a href="#">북플 | 서재</a>
+                                <div class="drop_sub">
+                                    <ul>
+                                        <li><a href="#">북플</a></li>
+                                        <li><a href="#">알라딘서재</a></li>
+                                        <li><a href="#">나의서재</a></li>
+                                    </ul>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -842,8 +859,8 @@
                                         </div>
                                         <img src="img/best1.jpg" alt="책표지">
                                         <dl>
-                                            <dt></dt>
-                                            <dd></dd>
+                                            <dt>돈의역사</dt>
+                                            <dd>쩐의 전쟁, 이길 수 있다</dd>
                                         </dl>
                                     </a>
                                 </li>
@@ -854,8 +871,8 @@
                                         </div>
                                         <img src="img/best2.jpg" alt="책표지">
                                         <dl>
-                                            <dt></dt>
-                                            <dd></dd>
+                                            <dt>돈의역사</dt>
+                                            <dd>쩐의 전쟁, 이길 수 있다</dd>
                                         </dl>
                                     </a>
                                 </li>
@@ -866,8 +883,8 @@
                                         </div>
                                         <img src="img/best3.jpg" alt="책표지">
                                         <dl>
-                                            <dt></dt>
-                                            <dd></dd>
+                                            <dt>돈의역사</dt>
+                                            <dd>쩐의 전쟁, 이길 수 있다</dd>
                                         </dl>
                                     </a>
                                 </li>
@@ -878,8 +895,8 @@
                                         </div>
                                         <img src="img/best4.jpg" alt="책표지">
                                         <dl>
-                                            <dt></dt>
-                                            <dd></dd>
+                                            <dt>돈의역사</dt>
+                                            <dd>쩐의 전쟁, 이길 수 있다</dd>
                                         </dl>
                                     </a>
                                 </li>
@@ -890,8 +907,8 @@
                                         </div>
                                         <img src="img/best5.jpg" alt="책표지">
                                         <dl>
-                                            <dt></dt>
-                                            <dd></dd>
+                                            <dt>돈의역사</dt>
+                                            <dd>쩐의 전쟁, 이길 수 있다</dd>
                                         </dl>
                                     </a>
                                 </li>
@@ -906,8 +923,8 @@
                                         </div>
                                         <img src="img/best1.jpg" alt="책표지">
                                         <dl>
-                                            <dt></dt>
-                                            <dd></dd>
+                                            <dt>돈의역사</dt>
+                                            <dd>쩐의 전쟁, 이길 수 있다</dd>
                                         </dl>
                                     </a>
                                 </li>
@@ -918,8 +935,8 @@
                                         </div>
                                         <img src="img/best2.jpg" alt="책표지">
                                         <dl>
-                                            <dt></dt>
-                                            <dd></dd>
+                                            <dt>돈의역사</dt>
+                                            <dd>쩐의 전쟁, 이길 수 있다</dd>
                                         </dl>
                                     </a>
                                 </li>
@@ -930,8 +947,8 @@
                                         </div>
                                         <img src="img/best3.jpg" alt="책표지">
                                         <dl>
-                                            <dt></dt>
-                                            <dd></dd>
+                                            <dt>돈의역사</dt>
+                                            <dd>쩐의 전쟁, 이길 수 있다</dd>
                                         </dl>
                                     </a>
                                 </li>
@@ -942,8 +959,8 @@
                                         </div>
                                         <img src="img/best4.jpg" alt="책표지">
                                         <dl>
-                                            <dt></dt>
-                                            <dd></dd>
+                                            <dt>돈의역사</dt>
+                                            <dd>쩐의 전쟁, 이길 수 있다</dd>
                                         </dl>
                                     </a>
                                 </li>
@@ -954,8 +971,8 @@
                                         </div>
                                         <img src="img/best5.jpg" alt="책표지">
                                         <dl>
-                                            <dt></dt>
-                                            <dd></dd>
+                                            <dt>돈의역사</dt>
+                                            <dd>쩐의 전쟁, 이길 수 있다</dd>
                                         </dl>
                                     </a>
                                 </li>
@@ -1137,7 +1154,11 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!--pager-->
                                 <div class="swiper-pagination"></div>
+                                <!--controler-->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
                             </div>
                         </div>
                     </article>
@@ -1286,10 +1307,6 @@
             el: '.book_cate_container .swiper-pagination',
             clickable: true,
           },
-          navigation: {
-            nextEl: '.book_cate_container .swiper-button-next',
-            prevEl: '.book_cate_container .swiper-button-prev',
-          },
           debugger: true,
         });
         var swiper = new Swiper('.new_book .swiper-container', {
@@ -1297,6 +1314,12 @@
           delay: 3000,
           disableOnInteraction: false,
           }
+        });
+        var swiper = new Swiper('.aladin_special .swiper-container', {
+          navigation: {
+            nextEl: '.book_cate_container .swiper-button-next',
+            prevEl: '.book_cate_container .swiper-button-prev',
+          },
         });
         </script>
     </body>

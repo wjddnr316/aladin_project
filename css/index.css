@@ -38,11 +38,18 @@ div.drop_navi .inner_contain.on{display:block;}
 div.drop_navi .navi_content{ width:100%; margin-top:-1px; overflow:hidden;}
 div.drop_navi .drop_menu{width:10%; height:550px; float:left; line-height:40px; border-right:1px solid #ddd;}
 div.drop_navi .drop_menu>a{font-size:1.025em; font-weight:700; color:#1875a0;}
-div.drop_navi .drop_menu.on{background:#33afe9;}
-div.drop_navi .drop_menu.on a{color:#fff;}
+div.drop_navi .drop_menu.on{
+    animation:dropMenu .5s ease forwards; 
+    -webkit-animation:dropMenu .8s ease forwards; }
+div.drop_navi .drop_menu.on a{animation:dropMenuFont .5s ease forwards; }
+@keyframes dropMenuFont{
+    0%{}48%{color:#fff;}100%{}}
+@keyframes dropMenu{
+    0%{opacity:1;}50%{opacity:.5; background:#1875a0;}100%{opacity:1;}}
+@-webkit-keyframes dropMenu{
+    0%{opacity:1;}50%{opacity:.5; background:#1875a0;}100%{opacity:1;}}
 
 div.drop_navi .drop_menu .drop_sub{width:100%; line-height:22px;}
-
 div.drop_navi .drop_menu .drop_sub ul{width:100%;}
 div.drop_navi .drop_menu .drop_sub li a{display:block;}
 div.drop_navi .drop_menu .drop_sub a:hover{color:#1875a0;}
@@ -170,15 +177,18 @@ section.book_cate_container .writer_pick{width: 66%; float:left; margin: 0 2%; b
     list-style:none; width:100%; margin-top:10px;}
 .best_book .best_number ol li{}
 .best_book .best_number a{
-    display:block; width:100%; height:44px; margin-top:5px; overflow:hidden; position:relative; left:0; top:0;}
+    display:block; width:100%; height:44px; margin-top:5px; position:relative; left:0; top:0;}
 .best_book .best_number .rank_number{
-    width:30px; float:left; text-align:center;}
+    width:30px; float:left; text-align:center; margin-left:-8px; }
 .best_book .best_number .rank_number span{
     display:block; width:100%; height:22px;}
 .best_book .best_number .rank_number .half_top{
     width: 15px; margin:0 auto; border-bottom:1px dashed #ddd;}
 .half_bot.up{color:red;}
-section.book_cate_container .swiper-pagination-bullet{background-color:#ef3b96;}
+.best_book .best_number a dl{font-size:.8125em; width:100px; position:absolute; right:0; top:0; padding-left:7px; }
+.best_book .best_number a dl dt{font-weight:700; margin-bottom:2px; }
+section.book_cate_container .swiper-pagination-bullet{
+    background-color:#ef3b96;}
 
 /*E-book*/
 article.e_book{width:100%;}
@@ -194,6 +204,11 @@ article.e_book .swiper-container .swiper-slide>div{width:25%; float:left;}
 /*알라딘스페셜*/
 article.aladin_special{width:100%;}
 article.aladin_special .container{width:15%; float:left; height:300px; border:1px solid #33afe9; margin:25px 0 0 2%;}
+article.aladin_special .swiper-button-next, 
+article.aladin_special .swiper-button-prev{
+    width:25px; height:25px; top:40%;}
+article.aladin_special .swiper-button-prev{left:2px;}
+article.aladin_special .swiper-button-next{right:2px;}
 /*할인정보*/
 article.saleif{width:100%;}
 article.saleif .container{width:100%; height:343px; background-color:#33afe9;}
