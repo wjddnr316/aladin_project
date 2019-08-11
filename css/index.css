@@ -223,26 +223,27 @@ div.saleifbox a:hover img{
   transition:all 2.5s ease;
 }
 /*스페셜추천*/
-article.special2_container{width:100%;  border:3px solid red;overflow: :hidden;}
+article.special2_container{width:100%; border:px solid red;overflow: :hidden; margin-top:25px;}
 article.special2_container .container{width:65%;height:100%; border:px solid blue; margin: 0 auto;overflow:hidden;}
 article.special2_container img{width:100%;}
-.spcleft{float:left; width:49%;margin-right:2%;border:3px solid pink;}
+.spcleft{float:left; width:49%;margin-right:2%;border:px solid pink;}
 .spcright{float:left; width:49%;border:px solid pink;}
+.spcleft_2 h1{margin:2% 0 2% 0; color:#33afe9;}
 
-.spcleft_1{width:100%; text-align: center; margin-bottom: 2%;}
-.spcleft_1 .swiper-slide{float:left; width:29.333%;margin-left:3%;}
-.spcleft_1 .swiper-slide:nth-child(4){margin-right:3%;}
-.spcleft_1 h1{margin:2% 0 2% 0;}
-.spcleft_1 .swiper-slide img{width:100%;}
-.spcleft_2{width:100%; text-align: center;}
-
-.spcright_1{width:100%; text-align: center; margin-bottom: 2%; border:1px solid #33afe9; overflow:hidden;}
+.spcleft_1{width:100%;  height: 229.16px; text-align: center; margin-bottom: 2%; border:1px solid #33afe9; overflow:hidden;}
+.spcleft_1 h1{margin:2% 0 2% 0;color:#33afe9;}
+.spcleft_son{float:left; width:29.333%;margin-left:3%;border:px solid red;}
+.spcleft_son:nth-child(4){margin-right:3%;margin-bottom:2%;}
+.spcleft_1 .spcleft_son img{width:50%; margin-bottom:5%;}
+.spcleft_2{width:100%; height:470.398px; text-align: center;border:1px solid #33afe9;}
+.spcright_1{width:100%; height:229.34px;  text-align: center; margin-bottom: 2%; border:1px solid #33afe9; overflow:hidden;}
 .spcright_son{float:left; width:29.333%;margin-left:3%;border:px solid red;}
 .spcright_son:nth-child(3){margin-right:3%;margin-bottom:2%;}
 /*.spcright_1{background:#33afe9; }*/
-.spcright_1 h1{margin:2% 0 2% 0;}
+.spcright_1 h1{margin:2% 0 2% 0;color:#33afe9;}
 .spcright_1 .swiper-slide{margin-bottom:3%; border:px solid red;}
-.spcright_1 .swiper-slide img{width:50%; margin-bottom:5%;}
+.spcright_1 .swiper-slide img{width:88.58px; height:130.59px; margin-bottom:5%;}
+
 .spcright_1:nth-child(3){margin-bottom:0;}
 .spcright_1 .swiper-pagination{bottom:10px;}
 
