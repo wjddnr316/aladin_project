@@ -1,3 +1,8 @@
+var a = document.querySelectorAll("a");
+a.addEventListener("click", function(){
+    return false;
+});
+
 function topfive(){
     $(".tapbtn").removeClass("on");
     $(".tapbtn1").addClass("on");
@@ -34,5 +39,6 @@ $(document).ready(function(){
         });
     });
 });
+
 
     
