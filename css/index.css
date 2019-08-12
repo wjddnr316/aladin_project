@@ -1,6 +1,6 @@
 @meta charset="utf-8";
 *{margin:0; padding:0; box-sizing:border-box;}
-body{font:0.8em/1.4 'Nanum Gothic',sans-serif;}
+body{font:0.8em/1.4 'Nanum Gothic',sans-serif; min-width:1790px;}
 ul{list-style:none;}
 a{text-decoration:none; color:#666;}
 img{vertical-align:bottom;}
