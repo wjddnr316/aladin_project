@@ -74,8 +74,8 @@ div.center_contain ul{width:85%; margin:0 auto; overflow:hidden;}
 div.center_contain ul li{display:block; width:14.285%; float:left; text-align:center;}
 div.center_contain ul li a{display:inline-block; color:#ef3b96;}
 
-div.search_area .right_contain{width:15%;float:left;}
-
+div.search_area .right_contain{width:15%;float:left; position:relative; left:0; top:0;}
+div.search_area .right_contain img{width:100%; position:absolute; right:0; top:3px;}
 div.content_container {width:100%;}
 
 /*******            content > main slider               ******/

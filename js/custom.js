@@ -1,7 +1,9 @@
-var a = document.querySelectorAll("a");
-a.addEventListener("click", function(){
-    return false;
+$(document).ready(function(){
+    $("a").on("click", function(){
+        return false;
+    });
 });
+                  
 
 function topfive(){
     $(".tapbtn").removeClass("on");
