@@ -210,7 +210,7 @@ article.aladin_special .swiper-button-prev{
 article.aladin_special .swiper-button-prev{left:2px;}
 article.aladin_special .swiper-button-next{right:2px;}
 /*할인정보*/
-article.saleif{width:100%; color:#ef3b96;}
+article.saleif{width:100%; color:#fff;}
 /*article.saleif .container{width:100%; height:343px; background-color:#33afe9;}*/
 article.saleif .container{
 background:url(../img/saleback2.jpg);
